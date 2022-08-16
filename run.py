@@ -6,7 +6,7 @@ from Scraper import scrape_all
 def run():
 
     start = time.time()
-    # scrape_all()
+    scrape_all()
     print (time.time() - start)
 
 

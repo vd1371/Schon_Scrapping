@@ -10,6 +10,7 @@ def scrape_all():
     stocks = _save_list_of_all_stocks_to_csv()
 
     n_cores = mp.cpu_count() - 1
+    n_cores = 3
     len_batches = int(len(stocks)/n_cores) + 1
     
     workers = []
